@@ -170,12 +170,12 @@ class BlockVisibility(Choice):
 
 class ExperienceMultiplier(Range):
     """
-    Multiplies the experience you gain from battles.
+    Percentage multiplier of the experience (star points) you gain from battles.
     """
     display_name = "Experience Multiplier"
     range_start = 0
-    range_end = 10
-    default = 1
+    range_end = 1000
+    default = 100
 
 
 class StartingHP(Range):
